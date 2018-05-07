@@ -41,7 +41,7 @@ class WeatherBumper extends Component {
         city: response.data.title, 
         temp: parseInt(response.data.consolidated_weather[0].the_temp),
         abbr: response.data.consolidated_weather[0].weather_state_abbr,
-      })
+      });
 
     });
   }
